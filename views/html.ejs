@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="/stylesheets/css.css">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+  
+</head>
+
+<body>
+  <canvas class="canvasbox" id="canvas" width="800" height="500"></canvas>
+  <input type="button" value="draw" onclick="use_tool('draw');" />
+  <input type="button" value="erase" onclick="use_tool('erase');" />
+  
+  <input type="button" id="record" value="record" onclick="recordMouseActions()" />
+  <input type="button" id="stop" value="stop" onclick="stopRecordingMouseActions()" style="color:red; display:none" />
+
+  <input type="text" id="placeholder" value=""/>
+  <div id="output"></div>
+  
+  
+  <script src="/javascripts/js.js"></script>
+</body>
+
+</html>
